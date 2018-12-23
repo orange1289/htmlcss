@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그</title>
+    <style>
+        table, th, td {
+            border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+            border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+        }
+        td {width:100px;}
+    </style>
+</head>
+<body>
+
+    <pre>
+        테이블 태그:
+
+        table   :
+        thead :
+        tbody :
+        tfoot :
+        
+        th :
+        tr :
+        td :
+
+        colspan:
+        rowspan:
+		
+		colgroup:
+		col:
+		
+		caption:
+
+    </pre>
+
+    <h2>테이블 태그 실습</h2>
+
+    <!--테이블 만들기-->
+    <table>
+        <!-- 3. 컬럼 설정         : colgroup , col -->
+        <!-- 컬럼 너비 설정 할 때 사용.-->
+        <colgroup>
+           <col width="200px">
+           <col width="300px">
+        </colgroup>
+
+        <!-- 2. table header 설정 : thead , tr, th  -->
+        <!-- 표의 컬럼명 표시할 때 사용 -->
+        <thead>
+        <tr>
+            <th>col1</th>
+            <th>col2</th>
+        </tr>
+        </thead>
+
+        <!-- 1. table body 설정   : tbody , tr, td.  -->
+        <!-- 표의 데이터를 표시할 때 사용 -->
+        <tbody>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+        <tr>
+            <td>4행1열</td>
+            <td>4행2열</td>
+        </tr>
+        <tr>
+            <td>5행1열</td>
+            <td>5행2열</td>
+        </tr>
+
+        <!-- 4. table footer 설정 : tfoot, tr, td -->
+        <!-- 표의 요약을 표시할 때 사용 -->
+        <tfoot>
+            <tr>
+                <td colspan="2">요약</td>
+            </tr>
+        </tfoot>
+    </table>
+    </tbody>
+        
+
+    
+</body>
+</html>
+
+
+
