@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
+    <style>
+        label { width: 100px; display: inline-block;}
     </style>
 </head>
+
 <body>
     <!-- fieldset & legend -->
     <!-- form 태그 필요 속성 3가지 추가. -->
-    <form action="" method="" enctype="">
+    <form action="" method="get" enctype="">
+        <fieldset>
+            <legend>&nbsp;입력 양식</legend>
+            <div>
+                <label for="name1">이름:</label>
+                <input type="text" name="name1" id="name1">
+            </div>
+            <div>
+                <label for="mail1">이메일:</label>
+                <input type="email" name="mail1" id="mail1">
+            </div>
+            <div><input type="submit" value="쿼리 전송"></div>
+        </fieldset>
     </form>
 
 </body>
+
 </html>

@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
+    <style>
+        label { width: 200px ; display: inline-block; }
     </style>
 </head>
+
 <body>
-    <h1>��ǰ �ֹ���</h1>
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <div>
+                <label for="name1">이름</label>
+                <input type="text" name="name1" id="name1" placeholder="여백없이 입력">
+            </div>
+            <div>
+                <label for="tel1">연락처</label>
+                <input type="tel" name="tel1" id="tel1" placeholder="연락가능한 번호">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>배송지정보</legend>
+            <div>
+                <label for="add">주소</label>
+                <input type="text" name="add" id="add" size="40" required>
+            </div>
+            <div>
+                <label for="tel2">전화번호</label>
+                <input type="tel" name="tel2" id="tel2" required>
+            </div>
 
-        <!-- ���� ���� -->
+            <div>
+                <label for="memo" style="vertical-align:140px ">메모</label>
+                <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <div>
+                <input type="checkbox" checked name="" id="">
+                <label for="">과테말라 안티구아 (100g)</label>
+                <label for=""><input type="number" name="" id="">개</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">과테말라 안티구아 (100g)</label>
+                <label for=""><input type="number" name="" id="">개</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">탐라는도다(블렌딩) (100g)</label>
+                <label for=""><input type="number" name="" id="">개</label>
+            </div>
+        </fieldset>
+        <div style="text-align:center" >
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 작성">
+        </div>
 
-        <!-- ����� ���� -->
 
-        <!-- �ֹ� ���� -->
+    </form>
 
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
 </body>
+
 </html>
